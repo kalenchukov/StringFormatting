@@ -151,7 +151,7 @@ public class StringFormat
 		Objects.requireNonNull(value);
 		Objects.requireNonNull(params);
 
-		for (Map.Entry<@NotNull String, @NotNull String> param : params.entrySet())
+		for (Map.Entry<String, String> param : params.entrySet())
 		{
 			Objects.requireNonNull(param.getKey());
 			Objects.requireNonNull(param.getValue());
