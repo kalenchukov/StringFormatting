@@ -17,6 +17,11 @@ import java.util.Objects;
 public class StringFormat
 {
 	/**
+	 * Конструктор для {@code StringFormat} запрещающий создавать объект класса.
+	 */
+	private StringFormat() {}
+
+	/**
 	 * @see #format(String, String, String).
 	 */
 	@NotNull
