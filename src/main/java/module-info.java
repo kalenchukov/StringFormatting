@@ -1,4 +1,4 @@
-module dev.kalenchukov.stringformat
+module dev.kalenchukov.stringformatting
 {
 	requires org.jetbrains.annotations;
 
