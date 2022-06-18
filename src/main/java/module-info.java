@@ -2,5 +2,5 @@ module dev.kalenchukov.stringformat
 {
 	requires org.jetbrains.annotations;
 
-	exports dev.kalenchukov.stringformat;
+	exports dev.kalenchukov.string.formatting;
 }

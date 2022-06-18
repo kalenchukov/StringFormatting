@@ -11,12 +11,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>dev.kalenchukov</groupId>
-	<artifactId>string-format</artifactId>
-	<version>1.1.0</version>
+	<artifactId>string-formatting</artifactId>
+	<version>1.2.0</version>
 
-	<name>StringFormat</name>
-	<description>Строковое форматирование</description>
-	<url>https://github.com/kalenchukov/StringFormat</url>
+	<name>StringFormatting</name>
+	<description>Форматирование строк</description>
+	<url>https://github.com/kalenchukov/StringFormatting</url>
 
 	<licenses>
 		<license>
@@ -35,8 +35,8 @@
 	</developers>
 
 	<properties>
-		<maven.compiler.source>16</maven.compiler.source>
-		<maven.compiler.target>16</maven.compiler.target>
+		<maven.compiler.source>18</maven.compiler.source>
+		<maven.compiler.target>18</maven.compiler.target>
 		<encoding>UTF-8</encoding>
 	</properties>
 

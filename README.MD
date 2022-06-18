@@ -1,4 +1,4 @@
-# StringFormat
+# StringFormatting
 Форматирование строк.
 
 ### Передача одного параметра:

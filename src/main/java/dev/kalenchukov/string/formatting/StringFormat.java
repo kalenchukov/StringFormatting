@@ -4,7 +4,7 @@
  * E-mail: mailto:aleksey.kalenchukov@yandex.ru
  */
 
-package dev.kalenchukov.stringformat;
+package dev.kalenchukov.string.formatting;
 
 import org.jetbrains.annotations.NotNull;
 
