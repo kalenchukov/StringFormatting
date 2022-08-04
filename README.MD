@@ -1,28 +1,47 @@
 # StringFormatting
+
 Форматирование строк.
 
-### Передача одного параметра:
+## Использование
+
+#### Передача одного параметра
+
 ```java
-String strTest1 = "Hello %NAME%!";
+String str = "Hello %NAME%!";
 
-StringFormat.format(strTest1, "NAME", "World");
-
-/*
-Результат выполнения: Hello World!
-*/
+StringFormat.format(str, "NAME", "World");
+// Результат выполнения: Hello World!
 ```
 
-### Передача нескольких параметров:
+#### Передача нескольких параметров
+
 ```java
-String strTest2 = "Hello %NAME%! It's %LANGUAGE%!";
+String str = "Hello %NAME%! It's %LANGUAGE%!";
 
 Map<String, String> params = new HashMap<>();
 params.put("NAME", "World");
 params.put("LANGUAGE", "Java");
 
-StringFormat.format(strTest2, params);
-
-/*
-Результат выполнения: Hello World! It's Java!
-*/
+StringFormat.format(str, params);
+// Результат выполнения: Hello World! It's Java!
 ```
+
+## Установка
+
+Для установки этого проекта, введите в терминале:
+
+```bash
+git clone https://github.com/kalenchukov/StringFormatting.git
+```
+
+## Версии
+
+Доступные [версии](https://github.com/kalenchukov/StringFormatting/releases).
+
+## Авторы
+
+[Алексей Каленчуков](https://github.com/kalenchukov)
+
+## Лицензия
+
+[MIT](https://opensource.org/licenses/MIT)
