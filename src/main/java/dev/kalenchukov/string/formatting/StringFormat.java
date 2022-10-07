@@ -131,19 +131,6 @@ public class StringFormat
 	}
 
 	/**
-	 * @see StringFormat#format(String, String, String)
-	 */
-	@NotNull
-	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Object param)
-	{
-		Objects.requireNonNull(value);
-		Objects.requireNonNull(key);
-		Objects.requireNonNull(param);
-
-		return StringFormat.format(value, key, String.valueOf(param));
-	}
-
-	/**
 	 * Форматирует строку с заданным ключом и параметром.
 	 *
 	 * @param value Строка в которой необходимо выполнить форматирование.
