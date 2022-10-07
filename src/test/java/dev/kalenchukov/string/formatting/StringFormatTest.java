@@ -89,15 +89,15 @@ public class StringFormatTest
 		assertEquals("Hello A!", string);
 	}
 
-	@Test
-	public void testFormatObject()
-	{
-		Object object = "Matrix";
-
-		String string = StringFormat.format("Hello %NAME%!", "NAME", object);
-
-		assertEquals("Hello Matrix!", string);
-	}
+//	@Test
+//	public void testFormatObject()
+//	{
+//		Object object = "Matrix";
+//
+//		String string = StringFormat.format("Hello %NAME%!", "NAME", object);
+//
+//		assertEquals("Hello Matrix!", string);
+//	}
 
 	@Test
 	public void testFormatString()

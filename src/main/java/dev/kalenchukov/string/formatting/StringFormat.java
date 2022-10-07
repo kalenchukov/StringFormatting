@@ -40,7 +40,7 @@ public class StringFormat
 	private StringFormat() {}
 
 	/**
-	 * @see #format(String, String, String).
+	 * @see StringFormat#format(String, String, String)
 	 */
 	@NotNull
 	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Integer param)
@@ -53,7 +53,7 @@ public class StringFormat
 	}
 
 	/**
-	 * @see #format(String, String, String).
+	 * @see StringFormat#format(String, String, String)
 	 */
 	@NotNull
 	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Long param)
@@ -66,7 +66,7 @@ public class StringFormat
 	}
 
 	/**
-	 * @see #format(String, String, String).
+	 * @see StringFormat#format(String, String, String)
 	 */
 	@NotNull
 	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Short param)
@@ -79,7 +79,7 @@ public class StringFormat
 	}
 
 	/**
-	 * @see #format(String, String, String).
+	 * @see StringFormat#format(String, String, String)
 	 */
 	@NotNull
 	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Float param)
@@ -92,7 +92,7 @@ public class StringFormat
 	}
 
 	/**
-	 * @see #format(String, String, String).
+	 * @see StringFormat#format(String, String, String)
 	 */
 	@NotNull
 	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Double param)
@@ -105,7 +105,7 @@ public class StringFormat
 	}
 
 	/**
-	 * @see #format(String, String, String).
+	 * @see StringFormat#format(String, String, String)
 	 */
 	@NotNull
 	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Byte param)
@@ -118,7 +118,7 @@ public class StringFormat
 	}
 
 	/**
-	 * @see #format(String, String, String).
+	 * @see StringFormat#format(String, String, String)
 	 */
 	@NotNull
 	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Character param)
@@ -131,7 +131,7 @@ public class StringFormat
 	}
 
 	/**
-	 * @see #format(String, String, String).
+	 * @see StringFormat#format(String, String, String)
 	 */
 	@NotNull
 	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Object param)
