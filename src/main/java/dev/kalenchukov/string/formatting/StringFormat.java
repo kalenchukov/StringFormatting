@@ -35,7 +35,7 @@ import java.util.Objects;
 public class StringFormat
 {
 	/**
-	 * Конструктор для {@code StringFormat} запрещающий создавать объект класса.
+	 * Конструктор для {@code StringFormat}.
 	 */
 	private StringFormat() {}
 
