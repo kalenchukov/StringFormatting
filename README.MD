@@ -26,14 +26,6 @@ StringFormat.format(str, params);
 // Результат выполнения: Hello World! It's Java!
 ```
 
-## Установка
-
-Для установки этого проекта, введите в терминале:
-
-```bash
-git clone https://github.com/kalenchukov/StringFormatting.git
-```
-
 ## Версии
 
 Доступные [версии](https://github.com/kalenchukov/StringFormatting/releases).
