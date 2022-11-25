@@ -38,10 +38,6 @@ git clone https://github.com/kalenchukov/StringFormatting.git
 
 Доступные [версии](https://github.com/kalenchukov/StringFormatting/releases).
 
-## Авторы
-
-[Алексей Каленчуков](https://github.com/kalenchukov)
-
 ## Лицензия
 
 [MIT](https://opensource.org/licenses/MIT)
