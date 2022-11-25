@@ -25,11 +25,3 @@ params.put("LANGUAGE", "Java");
 StringFormat.format(str, params);
 // Результат выполнения: Hello World! It's Java!
 ```
-
-## Версии
-
-Доступные [версии](https://github.com/kalenchukov/StringFormatting/releases).
-
-## Лицензия
-
-[MIT](https://opensource.org/licenses/MIT)
