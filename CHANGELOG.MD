@@ -3,10 +3,12 @@
 ## vX.X.X - XX.XX.XXXX
 
 ### Добавлено
-*
+* Добавлен AUTHOR.MD.
+* Добавлен INSTALL.MD.
+* Добавлен CHANGELOG.MD.
 
 ### Изменено
-* 
+* Обновлён README.MD.
 
 ### Исправлено
 *
@@ -21,7 +23,7 @@
 * Добавлен плагин maven-source в pom.xml.
 
 ### Изменено
-* Обновлён README.
+* Обновлён README.MD.
 * Удалён метод StringFormat.format(String, String, Object).
 
 ## v1.2.0 - 18.06.2022
