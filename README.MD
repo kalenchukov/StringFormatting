@@ -7,7 +7,11 @@
 String str = "Hello %NAME%!";
 
 StringFormat.format(str, "NAME", "World");
-// Результат выполнения: Hello World!
+```
+
+Результат выполнения:
+```
+Hello World!
 ```
 
 #### Передача нескольких параметров
@@ -19,5 +23,9 @@ params.put("NAME", "World");
 params.put("LANGUAGE", "Java");
 
 StringFormat.format(str, params);
-// Результат выполнения: Hello World! It's Java!
+```
+
+Результат выполнения:
+```
+Hello World! It's Java!
 ```
