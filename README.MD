@@ -1,11 +1,8 @@
 # StringFormatting
-
 Форматирование строк.
 
 ## Использование
-
 #### Передача одного параметра
-
 ```java
 String str = "Hello %NAME%!";
 
@@ -14,7 +11,6 @@ StringFormat.format(str, "NAME", "World");
 ```
 
 #### Передача нескольких параметров
-
 ```java
 String str = "Hello %NAME%! It's %LANGUAGE%!";
 
