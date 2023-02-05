@@ -1,4 +1,5 @@
-# StringFormatting
+# Справка
+## StringFormatting
 Форматирование строк.
 
 ## Использование
