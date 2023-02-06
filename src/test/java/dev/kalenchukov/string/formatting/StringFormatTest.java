@@ -31,8 +31,14 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Класс проверки методов класса {@link StringFormat}.
+ */
 public class StringFormatTest
 {
+	/**
+	 * Проверка метода {@link StringFormat#format(String, String, Integer)}.
+	 */
 	@Test
 	public void testFormatInteger()
 	{
@@ -41,6 +47,9 @@ public class StringFormatTest
 		assertEquals("Hello 100!", string);
 	}
 
+	/**
+	 * Проверка метода {@link StringFormat#format(String, String, Long)}.
+	 */
 	@Test
 	public void testFormatLong()
 	{
@@ -49,6 +58,9 @@ public class StringFormatTest
 		assertEquals("Hello 1000!", string);
 	}
 
+	/**
+	 * Проверка метода {@link StringFormat#format(String, String, Short)}.
+	 */
 	@Test
 	public void testFormatShort()
 	{
@@ -57,6 +69,9 @@ public class StringFormatTest
 		assertEquals("Hello 100.6!", string);
 	}
 
+	/**
+	 * Проверка метода {@link StringFormat#format(String, String, Float)}.
+	 */
 	@Test
 	public void testFormatFloat()
 	{
@@ -65,6 +80,9 @@ public class StringFormatTest
 		assertEquals("Hello 10.4!", string);
 	}
 
+	/**
+	 * Проверка метода {@link StringFormat#format(String, String, Double)}.
+	 */
 	@Test
 	public void testFormatDouble()
 	{
@@ -73,6 +91,9 @@ public class StringFormatTest
 		assertEquals("Hello 1000.78!", string);
 	}
 
+	/**
+	 * Проверка метода {@link StringFormat#format(String, String, Byte)}.
+	 */
 	@Test
 	public void testFormatByte()
 	{
@@ -81,6 +102,9 @@ public class StringFormatTest
 		assertEquals("Hello 120!", string);
 	}
 
+	/**
+	 * Проверка метода {@link StringFormat#format(String, String, Character)}.
+	 */
 	@Test
 	public void testFormatCharacter()
 	{
@@ -89,6 +113,9 @@ public class StringFormatTest
 		assertEquals("Hello A!", string);
 	}
 
+	/**
+	 * Проверка метода {@link StringFormat#format(String, String, String)}.
+	 */
 	@Test
 	public void testFormatString()
 	{
@@ -97,6 +124,9 @@ public class StringFormatTest
 		assertEquals("Hello World!", string);
 	}
 
+	/**
+	 * Проверка метода {@link StringFormat#format(String, Map)}.
+	 */
 	@Test
 	public void testFormatMap()
 	{
