@@ -37,7 +37,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class StringFormatTest
 {
 	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Integer)}.
+	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Integer}.
 	 */
 	@Test
 	public void testFormatInteger()
@@ -48,7 +48,7 @@ public class StringFormatTest
 	}
 
 	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Long)}.
+	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Long}.
 	 */
 	@Test
 	public void testFormatLong()
@@ -59,7 +59,7 @@ public class StringFormatTest
 	}
 
 	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Short)}.
+	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Short}.
 	 */
 	@Test
 	public void testFormatShort()
@@ -70,7 +70,7 @@ public class StringFormatTest
 	}
 
 	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Float)}.
+	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Float}.
 	 */
 	@Test
 	public void testFormatFloat()
@@ -81,7 +81,7 @@ public class StringFormatTest
 	}
 
 	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Double)}.
+	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Double}.
 	 */
 	@Test
 	public void testFormatDouble()
@@ -92,7 +92,7 @@ public class StringFormatTest
 	}
 
 	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Byte)}.
+	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Byte}.
 	 */
 	@Test
 	public void testFormatByte()
@@ -103,7 +103,7 @@ public class StringFormatTest
 	}
 
 	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Character)}.
+	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Character}.
 	 */
 	@Test
 	public void testFormatCharacter()
@@ -114,7 +114,7 @@ public class StringFormatTest
 	}
 
 	/**
-	 * Проверка метода {@link StringFormat#format(String, String, String)}.
+	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code String}.
 	 */
 	@Test
 	public void testFormatString()
@@ -125,7 +125,7 @@ public class StringFormatTest
 	}
 
 	/**
-	 * Проверка метода {@link StringFormat#format(String, Map)}.
+	 * Проверка метода {@link StringFormat#format(String, Map)} с передачей значения типа {@code Map}.
 	 */
 	@Test
 	public void testFormatMap()

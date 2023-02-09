@@ -40,97 +40,6 @@ public class StringFormat
 	private StringFormat() {}
 
 	/**
-	 * @see StringFormat#format(String, String, String)
-	 */
-	@NotNull
-	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Integer param)
-	{
-		Objects.requireNonNull(value);
-		Objects.requireNonNull(key);
-		Objects.requireNonNull(param);
-
-		return StringFormat.format(value, key, String.valueOf(param));
-	}
-
-	/**
-	 * @see StringFormat#format(String, String, String)
-	 */
-	@NotNull
-	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Long param)
-	{
-		Objects.requireNonNull(value);
-		Objects.requireNonNull(key);
-		Objects.requireNonNull(param);
-
-		return StringFormat.format(value, key, String.valueOf(param));
-	}
-
-	/**
-	 * @see StringFormat#format(String, String, String)
-	 */
-	@NotNull
-	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Short param)
-	{
-		Objects.requireNonNull(value);
-		Objects.requireNonNull(key);
-		Objects.requireNonNull(param);
-
-		return StringFormat.format(value, key, String.valueOf(param));
-	}
-
-	/**
-	 * @see StringFormat#format(String, String, String)
-	 */
-	@NotNull
-	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Float param)
-	{
-		Objects.requireNonNull(value);
-		Objects.requireNonNull(key);
-		Objects.requireNonNull(param);
-
-		return StringFormat.format(value, key, String.valueOf(param));
-	}
-
-	/**
-	 * @see StringFormat#format(String, String, String)
-	 */
-	@NotNull
-	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Double param)
-	{
-		Objects.requireNonNull(value);
-		Objects.requireNonNull(key);
-		Objects.requireNonNull(param);
-
-		return StringFormat.format(value, key, String.valueOf(param));
-	}
-
-	/**
-	 * @see StringFormat#format(String, String, String)
-	 */
-	@NotNull
-	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Byte param)
-	{
-		Objects.requireNonNull(value);
-		Objects.requireNonNull(key);
-		Objects.requireNonNull(param);
-
-		return StringFormat.format(value, key, String.valueOf(param));
-	}
-
-	/**
-	 * @see StringFormat#format(String, String, String)
-	 */
-	@NotNull
-	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Character param)
-	{
-		Objects.requireNonNull(value);
-		Objects.requireNonNull(key);
-		Objects.requireNonNull(param);
-
-		return StringFormat.format(value, key, String.valueOf(param));
-	}
-
-	/**
 	 * Форматирует строку с заданным ключом и параметром.
 	 *
 	 * @param value строка в которой необходимо выполнить форматирование.
@@ -139,13 +48,13 @@ public class StringFormat
 	 * @return строку, в которой все значения ключа, обрамлённые символом "%", заменены значением переданного параметра.
 	 */
 	@NotNull
-	public static String format(@NotNull String value, @NotNull final String key, @NotNull final String param)
+	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Object param)
 	{
 		Objects.requireNonNull(value);
 		Objects.requireNonNull(key);
 		Objects.requireNonNull(param);
 
-		return value.replaceAll("%" + key + "%", param);
+		return value.replaceAll("%" + key + "%", param.toString());
 	}
 
 	/**
