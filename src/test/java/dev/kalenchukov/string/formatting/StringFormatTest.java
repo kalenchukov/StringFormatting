@@ -125,7 +125,7 @@ public class StringFormatTest
 	}
 
 	/**
-	 * Проверка метода {@link StringFormat#format(String, Map)} с передачей значения типа {@code Map}.
+	 * Проверка метода {@link StringFormat#format(String, Map)} с передачей значения типа {@code Map<String, String>}.
 	 */
 	@Test
 	public void testFormatMap()
