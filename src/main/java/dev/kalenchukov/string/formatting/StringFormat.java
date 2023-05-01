@@ -31,6 +31,8 @@ import java.util.Objects;
 
 /**
  * Класс содержит статические методы для форматирования строк.
+ *
+ * @author Aleksey Kalenchukov
  */
 public class StringFormat
 {
