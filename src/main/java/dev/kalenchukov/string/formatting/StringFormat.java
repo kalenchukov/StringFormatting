@@ -32,7 +32,7 @@ import java.util.Objects;
 /**
  * Класс содержит статические методы для форматирования строк.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public class StringFormat
 {

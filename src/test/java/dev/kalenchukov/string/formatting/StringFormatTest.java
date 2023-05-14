@@ -34,7 +34,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Класс проверки методов класса {@link StringFormat}.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public class StringFormatTest
 {
