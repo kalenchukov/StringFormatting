@@ -42,7 +42,7 @@ public class StringFormatTest
 	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Integer}.
 	 */
 	@Test
-	public void testFormatInteger()
+	public void formatInteger()
 	{
 		String string = StringFormat.format("Hello %NAME%!", "NAME", 100);
 
@@ -53,7 +53,7 @@ public class StringFormatTest
 	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Long}.
 	 */
 	@Test
-	public void testFormatLong()
+	public void formatLong()
 	{
 		String string = StringFormat.format("Hello %NAME%!", "NAME", 1000L);
 
@@ -64,7 +64,7 @@ public class StringFormatTest
 	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Short}.
 	 */
 	@Test
-	public void testFormatShort()
+	public void formatShort()
 	{
 		String string = StringFormat.format("Hello %NAME%!", "NAME", 100.6);
 
@@ -75,7 +75,7 @@ public class StringFormatTest
 	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Float}.
 	 */
 	@Test
-	public void testFormatFloat()
+	public void formatFloat()
 	{
 		String string = StringFormat.format("Hello %NAME%!", "NAME", 10.4F);
 
@@ -86,7 +86,7 @@ public class StringFormatTest
 	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Double}.
 	 */
 	@Test
-	public void testFormatDouble()
+	public void formatDouble()
 	{
 		String string = StringFormat.format("Hello %NAME%!", "NAME", 1000.78D);
 
@@ -97,7 +97,7 @@ public class StringFormatTest
 	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Byte}.
 	 */
 	@Test
-	public void testFormatByte()
+	public void formatByte()
 	{
 		String string = StringFormat.format("Hello %NAME%!", "NAME", 120);
 
@@ -108,7 +108,7 @@ public class StringFormatTest
 	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Character}.
 	 */
 	@Test
-	public void testFormatCharacter()
+	public void formatCharacter()
 	{
 		String string = StringFormat.format("Hello %NAME%!", "NAME", 'A');
 
@@ -119,7 +119,7 @@ public class StringFormatTest
 	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code String}.
 	 */
 	@Test
-	public void testFormatString()
+	public void formatString()
 	{
 		String string = StringFormat.format("Hello %NAME%!", "NAME", "World");
 
@@ -130,7 +130,7 @@ public class StringFormatTest
 	 * Проверка метода {@link StringFormat#format(String, Map)} с передачей значения типа {@code Map<String, String>}.
 	 */
 	@Test
-	public void testFormatMap()
+	public void formatMap()
 	{
 		Map<String, String> params = new HashMap<>();
 		params.put("NAME", "World");
