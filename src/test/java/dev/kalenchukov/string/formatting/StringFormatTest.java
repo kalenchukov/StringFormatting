@@ -29,7 +29,7 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Класс проверки методов класса {@link StringFormat}.
@@ -46,7 +46,7 @@ public class StringFormatTest
 	{
 		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 100);
 
-		assertEquals("Hello 100!", actualString);
+		assertThat(actualString).isEqualTo("Hello 100!");
 	}
 
 	/**
@@ -57,7 +57,7 @@ public class StringFormatTest
 	{
 		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 1000L);
 
-		assertEquals("Hello 1000!", actualString);
+		assertThat(actualString).isEqualTo("Hello 1000!");
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class StringFormatTest
 	{
 		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 100.6);
 
-		assertEquals("Hello 100.6!", actualString);
+		assertThat(actualString).isEqualTo("Hello 100.6!");
 	}
 
 	/**
@@ -79,7 +79,7 @@ public class StringFormatTest
 	{
 		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 10.4F);
 
-		assertEquals("Hello 10.4!", actualString);
+		assertThat(actualString).isEqualTo("Hello 10.4!");
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class StringFormatTest
 	{
 		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 1000.78D);
 
-		assertEquals("Hello 1000.78!", actualString);
+		assertThat(actualString).isEqualTo("Hello 1000.78!");
 	}
 
 	/**
@@ -101,7 +101,7 @@ public class StringFormatTest
 	{
 		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 120);
 
-		assertEquals("Hello 120!", actualString);
+		assertThat(actualString).isEqualTo("Hello 120!");
 	}
 
 	/**
@@ -112,7 +112,7 @@ public class StringFormatTest
 	{
 		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 'A');
 
-		assertEquals("Hello A!", actualString);
+		assertThat(actualString).isEqualTo("Hello A!");
 	}
 
 	/**
@@ -123,7 +123,7 @@ public class StringFormatTest
 	{
 		String actualString = StringFormat.format("Hello %NAME%!", "NAME", "World");
 
-		assertEquals("Hello World!", actualString);
+		assertThat(actualString).isEqualTo("Hello World!");
 	}
 
 	/**
@@ -138,6 +138,6 @@ public class StringFormatTest
 
 		String actualString = StringFormat.format("Hello %NAME%! It`s %LANGUAGE%!", params);
 
-		assertEquals("Hello World! It`s Java!", actualString);
+		assertThat(actualString).isEqualTo("Hello World! It`s Java!");
 	}
 }
