@@ -44,9 +44,9 @@ public class StringFormatTest
 	@Test
 	public void formatInteger()
 	{
-		String actual = StringFormat.format("Hello %NAME%!", "NAME", 100);
+		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 100);
 
-		assertEquals("Hello 100!", actual);
+		assertEquals("Hello 100!", actualString);
 	}
 
 	/**
@@ -55,9 +55,9 @@ public class StringFormatTest
 	@Test
 	public void formatLong()
 	{
-		String actual = StringFormat.format("Hello %NAME%!", "NAME", 1000L);
+		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 1000L);
 
-		assertEquals("Hello 1000!", actual);
+		assertEquals("Hello 1000!", actualString);
 	}
 
 	/**
@@ -66,9 +66,9 @@ public class StringFormatTest
 	@Test
 	public void formatShort()
 	{
-		String actual = StringFormat.format("Hello %NAME%!", "NAME", 100.6);
+		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 100.6);
 
-		assertEquals("Hello 100.6!", actual);
+		assertEquals("Hello 100.6!", actualString);
 	}
 
 	/**
@@ -77,9 +77,9 @@ public class StringFormatTest
 	@Test
 	public void formatFloat()
 	{
-		String actual = StringFormat.format("Hello %NAME%!", "NAME", 10.4F);
+		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 10.4F);
 
-		assertEquals("Hello 10.4!", actual);
+		assertEquals("Hello 10.4!", actualString);
 	}
 
 	/**
@@ -88,9 +88,9 @@ public class StringFormatTest
 	@Test
 	public void formatDouble()
 	{
-		String actual = StringFormat.format("Hello %NAME%!", "NAME", 1000.78D);
+		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 1000.78D);
 
-		assertEquals("Hello 1000.78!", actual);
+		assertEquals("Hello 1000.78!", actualString);
 	}
 
 	/**
@@ -99,9 +99,9 @@ public class StringFormatTest
 	@Test
 	public void formatByte()
 	{
-		String actual = StringFormat.format("Hello %NAME%!", "NAME", 120);
+		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 120);
 
-		assertEquals("Hello 120!", actual);
+		assertEquals("Hello 120!", actualString);
 	}
 
 	/**
@@ -110,9 +110,9 @@ public class StringFormatTest
 	@Test
 	public void formatCharacter()
 	{
-		String actual = StringFormat.format("Hello %NAME%!", "NAME", 'A');
+		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 'A');
 
-		assertEquals("Hello A!", actual);
+		assertEquals("Hello A!", actualString);
 	}
 
 	/**
@@ -121,9 +121,9 @@ public class StringFormatTest
 	@Test
 	public void formatString()
 	{
-		String actual = StringFormat.format("Hello %NAME%!", "NAME", "World");
+		String actualString = StringFormat.format("Hello %NAME%!", "NAME", "World");
 
-		assertEquals("Hello World!", actual);
+		assertEquals("Hello World!", actualString);
 	}
 
 	/**
@@ -136,8 +136,8 @@ public class StringFormatTest
 		params.put("NAME", "World");
 		params.put("LANGUAGE", "Java");
 
-		String actual = StringFormat.format("Hello %NAME%! It`s %LANGUAGE%!", params);
+		String actualString = StringFormat.format("Hello %NAME%! It`s %LANGUAGE%!", params);
 
-		assertEquals("Hello World! It`s Java!", actual);
+		assertEquals("Hello World! It`s Java!", actualString);
 	}
 }
