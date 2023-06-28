@@ -48,6 +48,9 @@ public class StringFormat
 	 * @param key ключ который необходимо найти в строке.
 	 * @param param параметр которым необходимо заменить значение ключа.
 	 * @return строку, в которой все значения ключа, обрамлённые символом «%», заменены значением переданного параметра.
+	 * @throws NullPointerException если в качестве {@code value} передан {@code null}.
+	 * @throws NullPointerException если в качестве {@code key} передан {@code null}.
+	 * @throws NullPointerException если в качестве {@code param} передан {@code null}.
 	 */
 	@NotNull
 	public static String format(@NotNull String value, @NotNull final String key, @NotNull final Object param)
@@ -64,7 +67,10 @@ public class StringFormat
 	 *
 	 * @param value строка в которой необходимо выполнить форматирование.
 	 * @param params коллекция с ключами и параметрами которые необходимо заменить в строке.
-	 * @return строку, в которой все значения ключей коллекции, обрамлённые символом «%», заменены соответствующими значениями коллекции.
+	 * @return строку, в которой все значения ключей коллекции, обрамлённые символом «%», заменены
+	 * соответствующими значениями коллекции.
+	 * @throws NullPointerException если в качестве {@code value} передан {@code null}.
+	 * @throws NullPointerException если в качестве {@code params} передан {@code null}.
 	 */
 	@NotNull
 	public static String format(@NotNull String value, @NotNull final Map<@NotNull String, @NotNull String> params)
@@ -72,11 +78,7 @@ public class StringFormat
 		Objects.requireNonNull(value);
 		Objects.requireNonNull(params);
 
-		for (Map.Entry<String, String> param : params.entrySet())
-		{
-			Objects.requireNonNull(param.getKey());
-			Objects.requireNonNull(param.getValue());
-
+		for (Map.Entry<String, String> param : params.entrySet()) {
 			value = StringFormat.format(value, param.getKey(), param.getValue());
 		}
 
