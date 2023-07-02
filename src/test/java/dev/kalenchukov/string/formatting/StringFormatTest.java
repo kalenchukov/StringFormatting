@@ -24,6 +24,7 @@
 
 package dev.kalenchukov.string.formatting;
 
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -39,105 +40,114 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class StringFormatTest
 {
 	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Integer}.
+	 * Класс проверки статических методов.
+	 *
+	 * @author Алексей Каленчуков
 	 */
-	@Test
-	public void formatInteger()
+	@Nested
+	public class Static
 	{
-		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 100);
+		/**
+		 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Integer}.
+		 */
+		@Test
+		public void formatInteger()
+		{
+			String actualString = StringFormat.format("Hello %NAME%!", "NAME", 100);
 
-		assertThat(actualString).isEqualTo("Hello 100!");
-	}
+			assertThat(actualString).isEqualTo("Hello 100!");
+		}
 
-	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Long}.
-	 */
-	@Test
-	public void formatLong()
-	{
-		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 1000L);
+		/**
+		 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Long}.
+		 */
+		@Test
+		public void formatLong()
+		{
+			String actualString = StringFormat.format("Hello %NAME%!", "NAME", 1000L);
 
-		assertThat(actualString).isEqualTo("Hello 1000!");
-	}
+			assertThat(actualString).isEqualTo("Hello 1000!");
+		}
 
-	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Short}.
-	 */
-	@Test
-	public void formatShort()
-	{
-		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 100.6);
+		/**
+		 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Short}.
+		 */
+		@Test
+		public void formatShort()
+		{
+			String actualString = StringFormat.format("Hello %NAME%!", "NAME", 100.6);
 
-		assertThat(actualString).isEqualTo("Hello 100.6!");
-	}
+			assertThat(actualString).isEqualTo("Hello 100.6!");
+		}
 
-	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Float}.
-	 */
-	@Test
-	public void formatFloat()
-	{
-		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 10.4F);
+		/**
+		 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Float}.
+		 */
+		@Test
+		public void formatFloat()
+		{
+			String actualString = StringFormat.format("Hello %NAME%!", "NAME", 10.4F);
 
-		assertThat(actualString).isEqualTo("Hello 10.4!");
-	}
+			assertThat(actualString).isEqualTo("Hello 10.4!");
+		}
 
-	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Double}.
-	 */
-	@Test
-	public void formatDouble()
-	{
-		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 1000.78D);
+		/**
+		 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Double}.
+		 */
+		@Test
+		public void formatDouble()
+		{
+			String actualString = StringFormat.format("Hello %NAME%!", "NAME", 1000.78D);
 
-		assertThat(actualString).isEqualTo("Hello 1000.78!");
-	}
+			assertThat(actualString).isEqualTo("Hello 1000.78!");
+		}
 
-	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Byte}.
-	 */
-	@Test
-	public void formatByte()
-	{
-		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 120);
+		/**
+		 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Byte}.
+		 */
+		@Test
+		public void formatByte()
+		{
+			String actualString = StringFormat.format("Hello %NAME%!", "NAME", 120);
 
-		assertThat(actualString).isEqualTo("Hello 120!");
-	}
+			assertThat(actualString).isEqualTo("Hello 120!");
+		}
 
-	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Character}.
-	 */
-	@Test
-	public void formatCharacter()
-	{
-		String actualString = StringFormat.format("Hello %NAME%!", "NAME", 'A');
+		/**
+		 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code Character}.
+		 */
+		@Test
+		public void formatCharacter()
+		{
+			String actualString = StringFormat.format("Hello %NAME%!", "NAME", 'A');
 
-		assertThat(actualString).isEqualTo("Hello A!");
-	}
+			assertThat(actualString).isEqualTo("Hello A!");
+		}
 
-	/**
-	 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code String}.
-	 */
-	@Test
-	public void formatString()
-	{
-		String actualString = StringFormat.format("Hello %NAME%!", "NAME", "World");
+		/**
+		 * Проверка метода {@link StringFormat#format(String, String, Object)} с передачей значения типа {@code String}.
+		 */
+		@Test
+		public void formatString()
+		{
+			String actualString = StringFormat.format("Hello %NAME%!", "NAME", "World");
 
-		assertThat(actualString).isEqualTo("Hello World!");
-	}
+			assertThat(actualString).isEqualTo("Hello World!");
+		}
 
-	/**
-	 * Проверка метода {@link StringFormat#format(String, Map)} с передачей значения типа {@code Map<String, String>}.
-	 */
-	@Test
-	public void formatMap()
-	{
-		Map<String, String> params = new HashMap<>();
-		params.put("NAME", "World");
-		params.put("LANGUAGE", "Java");
+		/**
+		 * Проверка метода {@link StringFormat#format(String, Map)} с передачей значения типа {@code Map<String, String>}.
+		 */
+		@Test
+		public void formatMap()
+		{
+			Map<String, String> params = new HashMap<>();
+			params.put("NAME", "World");
+			params.put("LANGUAGE", "Java");
 
-		String actualString = StringFormat.format("Hello %NAME%! It`s %LANGUAGE%!", params);
+			String actualString = StringFormat.format("Hello %NAME%! It`s %LANGUAGE%!", params);
 
-		assertThat(actualString).isEqualTo("Hello World! It`s Java!");
+			assertThat(actualString).isEqualTo("Hello World! It`s Java!");
+		}
 	}
 }
